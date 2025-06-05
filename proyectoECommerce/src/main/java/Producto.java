@@ -1,5 +1,3 @@
-import java.security.PublicKey;
-import java.util.*;
 
 public class Producto {
     private static int contador = 0;
@@ -27,7 +25,7 @@ public class Producto {
     public void setCantStock(int cantStock){ this.cantStock = cantStock; }
     public int getCantStock(){return cantStock; }
 
-    public void mostrarListaProducto(){
+    public void mostrarProducto(){
         System.out.println("ID: " + id);
         System.out.println("Nombre: " + nombre);
         System.out.println("Precio: $" + precio);
