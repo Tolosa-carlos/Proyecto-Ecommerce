@@ -34,4 +34,16 @@ public class GestorProductos {
         System.out.println("Producto no encontrado");
     }
 
+    public void actualizarProducto(int id, String nuevoNombre, double nuevoPrecio, int nuevoStock){
+        Producto producto = buscarProducto(id);
+        if (producto != null){
+            producto.setNombre(nuevoNombre);
+            producto.setPrecio(nuevoPrecio);
+            producto.setCantStock(nuevoStock);
+            System.out.println("Producto actualizado correctamente.");
+        }else {
+            System.out.println("Producto no encontrado.");
+        }
+    }
+
 }

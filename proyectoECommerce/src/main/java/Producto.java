@@ -31,4 +31,10 @@ public class Producto {
         System.out.println("Precio: $" + precio);
         System.out.println("Stock: " + cantStock + " unidades");
     }
+
+    public void actualizarProducto(String nuevoNombre, double nuevoPrecio, int nuevoStock){
+        this.nombre = nuevoNombre;
+        this.precio = nuevoPrecio;
+        this.cantStock = nuevoStock;
+    }
 }

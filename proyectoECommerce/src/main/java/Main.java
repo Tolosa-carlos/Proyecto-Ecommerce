@@ -54,7 +54,7 @@ public class Main {
                             double nuevoPrecio = scanner.nextDouble();
                             System.out.println("Stock: ");
                             int nuevaCantidad = scanner.nextInt();
-                            //gestorProductos.
+                            gestorProductos.actualizarProducto(idABuscar, nuevoNombre, nuevoPrecio, nuevaCantidad);
                         }
                     }else {
                         System.out.println("Producto no encontrado.");
