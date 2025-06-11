@@ -3,6 +3,7 @@ import java.util.*;
 public class Pedido {
     private ArrayList<LineaPedido> lineasPedidos = new ArrayList<>();
 
+    public ArrayList<LineaPedido> getLineasPedidos(){ return lineasPedidos; }
     public void agregarLinea(LineaPedido lineaPedido){
         lineasPedidos.add(lineaPedido);
         System.out.println("Agregado al carrito");
